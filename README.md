@@ -39,6 +39,7 @@ Popule as variáveis de ambiente no arquivo `.env` com os valores apropriados.
 
 ## Executando a API
 uvicorn app.main --reload
+
 A API estará disponível em http://localhost:8000 e a documentação em http://localhost:8000/docs
 Endpoints
 
