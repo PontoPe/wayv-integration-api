@@ -1,0 +1,8 @@
+fastapi==0.103.1
+uvicorn==0.23.2
+sqlmodel==0.0.8
+pandas==2.1.0
+openpyxl==3.1.2
+python-multipart==0.0.6
+httpx==0.24.1
+python-dotenv==1.0.0
