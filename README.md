@@ -3,9 +3,9 @@
 # WayV Integration API
 API to manage and integrate form data with the WayV platform.
 
-# Features:
+## Features:
 
-## Data insertion via Excel files
+### Data insertion via Excel files
 Listing and filtering of records
 Birth date updates
 Receiving data via webhook and age calculation
