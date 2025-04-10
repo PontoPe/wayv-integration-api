@@ -45,55 +45,97 @@ The API will be available at http://localhost:8000 and the documentation at http
 
 ### 1. Data Insertion
 POST /api/pessoas/excel
+
 Accepts an Excel file (.xlsx or .xls)
+
 Returns the list of inserted people
+
 Example call:
 curl -X POST "http://localhost:8000/api/pessoas/excel"
+
 -H "accept: application/json"
+
 -H "Content-Type: multipart/form-data"
+
 -F "file=@dados.xlsx"
 
 ### 2. Data Listing
+
 GET /api/pessoas
+
 Lists all records
+
 Option to filter by gender
+
 Example call:
+
 curl -X GET "http://localhost:8000/api/pessoas?sexo=Masculino"
+
 -H "accept: application/json"
 
 ### 3. Data Update
+
 PUT /api/pessoas/{id}
+
 Updates a record's birth date
+
 Example call:
+
 curl -X PUT "http://localhost:8000/api/pessoas/1"
+
 -H "accept: application/json"
+
 -H "Content-Type: application/json"
+
 -d '{"data_nascimento": "1990-01-15"}'
 
 ### 4. Webhook
+
 POST /api/webhook
+
 Receives form data
+
 Calculates age
+
 Updates the corresponding form
+
 Example call:
+
 curl -X POST "http://localhost:8000/api/webhook"
+
 -H "accept: application/json"
+
 -H "Content-Type: application/json"
+
 -d '{
+
 "nome_completo": "João Silva",
+
 "data_nascimento": "1990-05-15",
+
 "sexo": "Masculino",
+
 "email": "joao@example.com",
+
 "celular": "11987654321",
+
 "form_id": "12345"
+
 }'
 
+
 ### 5. Data Cleanup
+
 DELETE /api/pessoas
+
 Removes all records from the database
+
 Example call:
+
 curl -X DELETE "http://localhost:8000/api/pessoas"
+
 -H "accept: application/json"
+
 
 
 ## WayV Integration
