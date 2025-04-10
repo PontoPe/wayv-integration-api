@@ -1,4 +1,4 @@
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/PontoPe/wayv-integration-api/README-ptbr.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/PontoPe/wayv-integration-api/blob/master/README-ptbr.md)
 
 # WayV Integration API
 API to manage and integrate form data with the WayV platform.
